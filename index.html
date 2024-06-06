@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Thuto Personal web</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<!DOCTYPE html>
+  <html>
+    <head>
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+      <!-- <link rel="stylesheet" href="styles.css">  -->
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <link rel="stylesheet" href="materialize">
+
+
+      <title>THUTO'S WEB</title>
+    </head>
+
+
+
+
+    <body>
+      <!--
+        <div class="col s12 m4 center-align">
+        <header>
+          <div class="col 12  ">
+            <h1>Thuto's Webpage</h1>
+          </div>
+        </header>
+      </div> 
+      -->
+      
+    
+
+      <div class="row center-align">
+        <main class="col s12 m4">
+          <h2> {{user.fullName}}</h2>
+        </main>
+          
+        <div class="col s12 m6">
+          <img src="IMG_0207.jpg" alt="Thuto Photo" width="250"> 
+        </div>   
+       </div>
+      
+       <main class="row center-align">
+
+       </main>
+
+
+<!-- SIHLE'S HELP -->
+
+<style>
+  body {
+    background-color: antiquewhite;
+  }
+
+  @media (max-width : 960px) {
+    .mid-text {
+      float: right !important;
+    }
+
+    .mid-text-img {
+      float: left !important;
+    }
+  }
+  img{
+    clip-path: circle(130px);
+  }
+</style>
+
+<!--HELP ENDS HERE-->
+
+
+
+
+       <!-- cape town -->
+
+      <div class="row">
+        <div class="col s12">
+          <h1> {{city.name}}</h1>
+        </div>
+
+        <section class="col s12 m6 l6">
+          <img src="How to Spend 3 Days in Cape Town, South Africa | Urban Pixxels.jpg" width="250" height="250"> 
+        </section>
+        <div class="col s12 m6 l6">
+          <p>
+            {{city.description}}
+          </p>
+        </div>
+      </div>
+    
+
+
+      <!-- this foreign lan sec-->
+      <section class="row">
+        <div class="pp">
+          <h1>
+            {{foreignLanguage.header}}
+          </h1>
+          <p>
+            {{foreignLanguage.description}}
+          </p>  
+
+           <!-- The table -->
+        </div>
+        <table>
+          <tr>
+            <th>
+              English
+            </th>
+            <th>
+              Hindi
+            </th>
+          </tr>
+          {{this.table}}
+          <tr>
+            <td>
+              Hello
+            </td>
+            <td>
+              Namaste
+            </td>
+          </tr>
+            <tr>
+              <td>
+                Thank you
+              </td>
+              <td>
+                Dhanyavaad
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Goodbye
+              </td>
+              <td>
+                Alvida
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Good Morning
+              </td>
+              <td>
+                Shubh prabhaat
+              </td>
+            </tr>
+    
+        </table>
+
+      </section>
+     
+
+      <br>
+     
+
+
+<!-- FAVORITE SUBS-->
+
+<div class="row">
+  <h1> Favorite Subjects</h1>
+  <div class="row">
+    <div class="col l4 m4 s12">
+      <div class="row">
+        <h3 class="center-align">
+          {{favouriteSubjects.name1}}
+        </h3>
+        <p class="col s6">
+          {{favouriteSubjects.description1}}
+        </p>
+        <img  src="Full Stack Development | Skywin IT Academy.jpg" alt="" width="150" class="images col s6">
+      </div>
+    </div>
+
+    <div class="col l4 m4 s12">
+      <div class="row">
+        <h3 class="center-align">
+          {{favouriteSubjects.name2}}
+        </h3>
+        <img src="Agile Development.jpg" alt="" width="150" class="images col s6 mid-text-img">
+        <p class="col s6 mid-text">
+          {{favouriteSubjects.description2}}
+        </p>
+      </div>
+    </div>
+
+    <div class="col l4 m4 s12">
+      <div class="row">
+        <h3 class="center-align">
+          {{favouriteSubjects.name3}}
+        </h3>
+        <img src="Free Photo | Ai nuclear energy industry innovation, smart grid disruptive technology.jpg" alt="" width="150" class="images col s6">
+        <p class="col s6">
+          {{favouriteSubjects.description3}}
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- HISTORICAL PLACES-->
+
+<h1>HISTORICAL PLACES</h1>
+
+<div class="row">
+  <div class="col-6">
+    {{historicalPlace.name1}}
+
+    <div>
+      <img src="7B7A8ACC-1179-459F-A106-9316408F2B46_1_105_c.jpeg" alt="" width="150">
+    </div>
+    {{historicalPlace.description1}}
+  </div>
+
+<br>
+
+  <div class="col-6">
+    {{historicalPlace.name2}}
+    <div>
+      <img src="A2296EEA-2A36-4423-B8DD-B0E1F3994FF1_1_105_c.jpeg" alt="" width="150">
+    </div>
+    {{historicalPlace.description2}}
+  </div>
+
+  <br>
+
+  <div  class="col-6">
+    {{historicalPlace.name3}}
+    <div>
+      <img src="CB22156C-C729-4468-905E-AA61604C04F8_1_105_c.jpeg" alt="" width="150">
+    </div>
+    {{historicalPlace.description3}}
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <br>
+
+  <footer class="footer center-align">
+    <p>&copy; 2024 Thuto. All Rights Reserved.</p>
+  </footer>
+
+  </body>
+</html>

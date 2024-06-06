@@ -1,0 +1,57 @@
+{
+  "user" : {
+      "fullName": "Thuto Machika",
+      "photo" : "IMG_0207.jpg"
+  },
+  "city" : {
+      "name" : "Cape Town",
+      "photo" : "Cape Town, South Africa 💫 What a beautiful land!.jpg",
+      "description" : "I'd love to visit because Cape Town is a destination that captivates visitors with its remarkable blend of natural beauty, cultural richness, and diverse activities. Nestled between the majestic Table Mountain and the expansive Atlantic Ocean, it offers stunning vistas and a variety of outdoor adventures. Visitors can hike or take a cable car up Table Mountain for panoramic views, relax on the pristine beaches of Camps Bay, or explore the scenic Cape Peninsula, home to the iconic Cape of Good Hope. Cape Town's culinary scene is another highlight, offering a fusion of flavors from traditional South African dishes to world-class wines from nearby vineyards in Stellenbosch and Franschhoek. Additionally, the city's commitment to sustainability and innovation is evident in its green spaces and eco-friendly initiatives. With its friendly locals, moderate climate, and an array of activities ranging from adventure sports to wine tasting, Cape Town promises an unforgettable experience for every traveler."
+  },
+  "foreignLanguage" : {
+      "language" : "HINDI",
+      "header" : "Foreign Language",
+      "description" : "Hindi is the fourth most spoken language in the world and is deeply intertwined with the rich cultural heritage of India. Learning Hindi provides direct access to Indian literature, films, music, and religious texts, offering a deeper understanding of the country’s traditions, philosophies, and arts.",
+      "phrases" : [{
+          "englishPhrase" : "Hello",
+          "foreignLanguage" : "Namaste"
+      },
+      {
+          "englishPhrase" : "Good Morning",
+          "foreignLanguage" : "Shubh prabhaat"
+      },
+      {
+        "englishPhrase" : "Thank you",
+        "foreignLanguage" : "Dhanyavaad"
+      },
+      {
+        "englishPhrase" : "Goodbye",
+        "foreignLanguage" : "Alvida"
+      }]
+  },
+
+
+  "favouriteSubjects" : {
+          "name1" : "Full Stack Web Dev",
+          "description1" : "A comprehensive training program or course designed to teach individuals the skills necessary to build complete web applications. This typically includes both front-end (client-side) and back-end (server-side) development.",
+          "photo" : "Full Stack Development | Skywin IT Academy.jpg",
+          
+    
+          "name2" : "Agile Rapid Skills",
+          "description2" : "A specialized training program designed to quickly equip individuals with the essential skills needed for effective agile project management and development. This type of module focuses on practical, hands-on learning and is often structured to be intensive and immersive.",
+        
+          "name3" : "4IR Tech Bootcamp",
+          "description3" : "The 4IR (Fourth Industrial Revolution) Tech Bootcamp module is a comprehensive educational program designed to equip participants with the knowledge and skills required to navigate and thrive in the rapidly evolving landscape of the Fourth Industrial Revolution."
+      },
+      "historicalPlace" : { 
+        "name1" : "Durban",
+        "description1" : "Durban is located in the heart of Zululand. Built for the 2010 FIFA World Cup. Durban July is Africa's greatest horse-racing event.",
+        "name2" : "Pretoria",
+        "description2" : "Pretoria was founded in 1855 by Marthinus Pretorius. It features a statue of Paul Kruger, the former President of the South African Republic. UP is one of SA leading universities found in pretoria.",
+        "name3" : "Polokwane",
+        "description3" : "The name Polokwane means (Place of Safety) in Northern Sotho, reflecting the city's role as a refuge and secure area in the region. The city was founded in 1886 by Voortrekkers and was originally named Pietersburg after Petrus Jacobus Joubert"
+      }
+
+
+  
+}
