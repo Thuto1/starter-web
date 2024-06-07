@@ -28,14 +28,24 @@
 
       <link rel="stylesheet" href="materialize">
 
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
+
 
       <title>THUTO'S WEB</title>
+
     </head>
 
 
 
 
     <body>
+      
+
       <!--
         <div class="col s12 m4 center-align">
         <header>
@@ -49,12 +59,12 @@
     
 
       <div class="row center-align">
-        <main class="col s12 m4">
+        <main class="col s12 m6">
           <h2> {{user.fullName}}</h2>
         </main>
           
         <div class="col s12 m6">
-          <img src="IMG_0207.jpg" alt="Thuto Photo" width="250"> 
+          <img src="./IMG_0207.jpg" alt="Thuto Photo" width="250"> 
         </div>   
        </div>
       
@@ -67,10 +77,10 @@
 
 <style>
   body {
-    background-color: antiquewhite;
+    background-color: beige;
   }
 
-  @media (max-width : 960px) {
+  @media (max-width : 600px) {
     .mid-text {
       float: right !important;
     }
@@ -82,6 +92,8 @@
   img{
     clip-path: circle(130px);
   }
+
+  
 </style>
 
 <!--HELP ENDS HERE-->
@@ -97,7 +109,7 @@
         </div>
 
         <section class="col s12 m6 l6">
-          <img src="How to Spend 3 Days in Cape Town, South Africa | Urban Pixxels.jpg" width="250" height="250"> 
+          <img src="./How to Spend 3 Days in Cape Town, South Africa | Urban Pixxels.jpg" width="250" height="250"> 
         </section>
         <div class="col s12 m6 l6">
           <p>
@@ -175,7 +187,7 @@
 
 
 <!-- FAVORITE SUBS-->
-
+<!--
 <div class="row">
   <h1> Favorite Subjects</h1>
   <div class="row">
@@ -184,10 +196,10 @@
         <h3 class="center-align">
           {{favouriteSubjects.name1}}
         </h3>
+        <img  src="./Full Stack Development | Skywin IT Academy.jpg" alt="" width="150" class="images col s6">
         <p class="col s6">
           {{favouriteSubjects.description1}}
         </p>
-        <img  src="Full Stack Development | Skywin IT Academy.jpg" alt="" width="150" class="images col s6">
       </div>
     </div>
 
@@ -196,19 +208,18 @@
         <h3 class="center-align">
           {{favouriteSubjects.name2}}
         </h3>
-        <img src="Agile Development.jpg" alt="" width="150" class="images col s6 mid-text-img">
+        <img src="./Agile Development.jpg" alt="" width="150" class="images col s6 mid-text-img">
         <p class="col s6 mid-text">
           {{favouriteSubjects.description2}}
         </p>
       </div>
     </div>
-
-    <div class="col l4 m4 s12">
-      <div class="row">
-        <h3 class="center-align">
+    <div class="row">
+    <div class="col l4 m4 s12 center-align">
+        <h3>
           {{favouriteSubjects.name3}}
         </h3>
-        <img src="Free Photo | Ai nuclear energy industry innovation, smart grid disruptive technology.jpg" alt="" width="150" class="images col s6">
+        <img src="./Free Photo | Ai nuclear energy industry innovation, smart grid disruptive technology.jpg" alt="" width="150" class="images col s6">
         <p class="col s6">
           {{favouriteSubjects.description3}}
         </p>
@@ -220,22 +231,50 @@
 
 </div>
 
+-->
 
 
 
+<!--TEST-->
+
+<div class="row">
+  <h2>Favourite Subjects</h2>
+  <div class="row">
+    <div class="col l4 m4 s12">
+      <div class="row">
+        <h3 class="center-align">{{favouriteSubjects.name}}</h3>
+        <p class="col s6">{{favouriteSubjects.description}}</p>
+        <img src="{{favouriteSubjects.photo}}" width="150" alt="{{favouriteSubjects.name}}" class="images col s6">
+      </div>
+    </div>
+    <div class="col l4 m4 s12">
+      <div class="row">
+        <h3 class="center-align">{{favouriteSubjects.name1}}</h3>
+        <p class="col s6 mid-text">{{favouriteSubjects.description1}}</p>
+        <img src="{{favouriteSubjects.photo1}}" width="150" alt="{{favouriteSubjects.name1}}"
+          class="images col s6 mid-text-img">
+      </div>
+    </div>
+    <div class="col l4 m4 s12">
+      <div class="row">
+        <h3 class="center-align">{{favouriteSubjects.name2}}</h3>
+        <p class="col s6">{{favouriteSubjects.description2}}</p>
+        <img src="{{favouriteSubjects.photo2}}" width="150" alt="{{favouriteSubjects.name2}}" class="images col s6">
+      </div>
+                
+    </div>
 
 
 
 <!-- HISTORICAL PLACES-->
 
-<h1>HISTORICAL PLACES</h1>
-
+ <!--
 <div class="row">
   <div class="col-6">
     {{historicalPlace.name1}}
 
     <div>
-      <img src="7B7A8ACC-1179-459F-A106-9316408F2B46_1_105_c.jpeg" alt="" width="150">
+      <img src="./7B7A8ACC-1179-459F-A106-9316408F2B46_1_105_c.jpeg" alt="" width="150">
     </div>
     {{historicalPlace.description1}}
   </div>
@@ -245,7 +284,7 @@
   <div class="col-6">
     {{historicalPlace.name2}}
     <div>
-      <img src="A2296EEA-2A36-4423-B8DD-B0E1F3994FF1_1_105_c.jpeg" alt="" width="150">
+      <img src="./A2296EEA-2A36-4423-B8DD-B0E1F3994FF1_1_105_c.jpeg" alt="" width="150">
     </div>
     {{historicalPlace.description2}}
   </div>
@@ -255,7 +294,7 @@
   <div  class="col-6">
     {{historicalPlace.name3}}
     <div>
-      <img src="CB22156C-C729-4468-905E-AA61604C04F8_1_105_c.jpeg" alt="" width="150">
+      <img src="./CB22156C-C729-4468-905E-AA61604C04F8_1_105_c.jpeg" alt="" width="150">
     </div>
     {{historicalPlace.description3}}
   </div>
@@ -264,6 +303,36 @@
 
 </div>
 
+
+-->
+
+
+ <div class="row">
+  <h2>Historical Place</h2>
+  <div class="row">
+    <div class="col l4 m4 s12">
+      <div class="row">
+        <h3 class="center-align">{{historicalPlace.name1}}</h3>
+        <p class="col s6">{{historicalPlace.description1}}</p>
+        <img src="{{historicalPlace.photo1}}" width="150" alt="{{historicalPlace.name1}}" class="images col s6">
+      </div>
+    </div>
+    <div class="col l4 m4 s12">
+      <div class="row">
+        <h3 class="center-align">{{historicalPlace.name2}}</h3>
+        <p class="col s6 mid-text">{{historicalPlace.description2}}</p>
+        <img src="{{historicalPlace.photo2}}" width="150" alt="{{historicalPlace.name2}}"
+          class="images col s6 mid-text-img">
+      </div>
+    </div>
+    <div class="col l4 m4 s12">
+      <div class="row">
+        <h3 class="center-align">{{historicalPlace.name3}}</h3>
+        <p class="col s6">{{historicalPlace.description3}}</p>
+        <img src="{{historicalPlace.photo3}}" width="150" alt="{{historicalPlace.name2}}" class="images col s6">
+      </div>
+                
+    </div>
 
 
 
